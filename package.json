@@ -1,6 +1,5 @@
 {
   "name": "server-components-next",
-  "private": true,
   "license": "MIT",
   "scripts": {
     "dev": "next",

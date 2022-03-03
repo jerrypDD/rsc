@@ -166,10 +166,10 @@ body {
 }
 
 .box {
-  background: rgb(165, 209, 214);
+  background: rgb(164, 197, 240);
   padding: 20px;
   border-radius: 16px;
-  width: 300px;
+  width: 500px;
 }
 
 .ct-my {

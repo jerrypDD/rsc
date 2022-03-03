@@ -39,9 +39,10 @@ function TodosClient() {
 
     <div className='list'>
         {todos.map((note, index) => (
-          <TodoItemWrapper title={note.title} key={note.id}>
-            <TodoItem title={note.body} index={index}/>
-        </TodoItemWrapper>
+          <div className='box'>
+          <h2>{note.title}</h2>
+          <TodoItem title={note.body} index={index} key={index}/>
+        </div>
         ))}
         </div>
    

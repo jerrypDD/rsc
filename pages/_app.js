@@ -11,7 +11,7 @@ export default function MyApp({ Component, pageProps }) {
     <>
     <h1 className='ct-my'>hello</h1>
     <div className='flex'>
-      <Link href='/' onClick={() => refresh()}>
+      <Link href='/server' onClick={() => refresh()}>
         <div className='button' >serverpage</div>
         </Link>
       <Link href='/client'><div className='button'>client </div></Link>
