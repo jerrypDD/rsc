@@ -20,7 +20,7 @@ function Todos() {
           <div className='box'>
             <h2>{note.title}</h2>
             <TodoItem title={note.body} index={index} key={index}/>
-            </div>
+          </div>
         ))}
         </div>
       </Suspense>

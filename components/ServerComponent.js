@@ -2,7 +2,7 @@ import React from 'react'
 
 function ServerComponent() {
   return (
-    <div className='box'>This is a Server Component</div>
+    <div className='box' >This is a Server Component</div>
   )
 }
 
