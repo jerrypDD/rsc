@@ -1,42 +1,21 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import '../style.css'
+import { unstable_useRefreshRoot as useRefreshRoot } from 'next/streaming'
+export default function MyApp({ Component, pageProps }) { 
+  const refresh = useRefreshRoot()
 
-export default function MyApp({ Component, pageProps }) {
+  
+
   return (
     <>
-      <Head>
-        <title>React Server Components (Experimental Demo)</title>
-        <meta httpEquiv="Content-Language" content="en" />
-        <meta
-          name="description"
-          content="Experimental demo of React Server Components in Next.js. Hosted on Vercel."
-        />
-        <meta
-          name="og:description"
-          content="Experimental demo of React Server Components in Next.js. Hosted on Vercel."
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:image"
-          content="https://next-server-components.vercel.app/og.png"
-        />
-        <meta
-          name="twitter:site:domain"
-          content="https://next-server-components.vercel.app"
-        />
-        <meta
-          name="twitter:url"
-          content="https://next-server-components.vercel.app/og.png"
-        />
-        <meta
-          name="og:title"
-          content="React Server Components (Experimental Demo)"
-        />
-        <meta
-          name="og:image"
-          content="https://next-server-components.vercel.app/og.png"
-        />
-      </Head>
+    <h1 className='ct-my'>hello</h1>
+    <div className='flex'>
+      <Link href='/' onClick={() => refresh()}>
+        <div className='button' >serverpage</div>
+        </Link>
+      <Link href='/client'><div className='button'>client </div></Link>
+    </div>
       <Component {...pageProps} />
     </>
   )

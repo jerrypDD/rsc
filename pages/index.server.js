@@ -1,22 +1,12 @@
-import { Suspense } from 'react'
-import Note from '../components/Note.server'
-import NoteSkeleton from '../components/NoteSkeleton'
-import Page from '../components/Page.server'
-import { getUser } from '../libs/session'
 
-export default function NotePage({ login, searchText = '', router }) {
-  const { id } = router.query
+import Todos from '../components/Todos.server'
+
+export default function Index() {
+
   return (
-    <Page login={login} searchText={searchText}>
-      <Suspense fallback={<NoteSkeleton isEditing={false} />}>
-        <Note login={login} selectedId={id} isEditing={false} />
-      </Suspense>
-    </Page>
+    <div>
+    <h1 className='ct-my'>Todos Server</h1>
+      <Todos  />
+    </div>
   )
-}
-
-export async function getServerSideProps({ req }) {
-  return {
-    props: { login: getUser(req) },
-  }
 }

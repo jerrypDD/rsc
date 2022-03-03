@@ -9,15 +9,10 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "cheerio": "^1.0.0-rc.10",
-    "date-fns": "^2.16.1",
-    "ioredis": "^4.19.4",
-    "marked": "^1.2.7",
+    "moment": "^2.29.1",
     "next": "^12.1.0",
-    "oauth": "^0.9.15",
     "react": "^18.0.0-rc.0",
-    "react-dom": "^18.0.0-rc.0",
-    "sanitize-html": "^2.3.0"
+    "react-dom": "^18.0.0-rc.0"
   },
   "devDependencies": {
     "prettier": "2.2.1"
